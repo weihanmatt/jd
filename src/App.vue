@@ -7,6 +7,7 @@
     <Money/>
     <Product/>
     <Footer/>
+    <Navbar/>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import Borrow from './js/home/borrow'
 import Money from './js/home/money'
 import Product from './js/home/product'
 import Footer from './js/public/footer'
+import Navbar from './js/public/navbar'
 
 export default {
   components:{
@@ -27,7 +29,8 @@ export default {
     Borrow,
     Money,
     Product,
-    Footer
+    Footer,
+    Navbar
   },
 }
 </script>>
