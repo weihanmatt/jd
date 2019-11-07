@@ -1,15 +1,31 @@
-import Vue from "vue"
-import Router from "vue-router"
-import App from "./App.vue"
+import Home from "./js/home/hindex.vue"
+import Money from "./js/money/index.vue"
 
-Vue.use(Router)
+const routers = [
+    {
+        path: '/',
+        name: 'home',
+        component: Home,
+    },
+    {
+        path: '/money',
+        name: 'money',
+        component: Money
+    }
+]
+export default routers
 
-export default new Router({
-    routes: [
-        {
-            path: "/",
-            name: "App",
-            component: App,
-        },
-    ],
-})
+// export default new Router({
+//     routes: [
+//         {
+//             path: '/',
+//             name: 'home',
+//             component: Home,
+//         },
+//         {
+//             path: '/money',
+//             name: 'money',
+//             component: Money
+//         }
+//     ],
+// })
