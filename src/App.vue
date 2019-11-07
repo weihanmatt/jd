@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <Heador />
     <router-view></router-view>
     <Footer/>
