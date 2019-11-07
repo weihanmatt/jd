@@ -53,5 +53,8 @@ export default {
       border-radius: 4px;
       margin: 28px 24px 0 0;
     }
+    em{
+      font-style: normal
+    }
   }
 </style>

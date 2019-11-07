@@ -5,8 +5,8 @@
       :not-next-tick="options.notNextTick"
     >
       <swiper-slide
-        v-for="item in items"
-        :key="item.href"
+        v-for="(item,index) in items"
+        :key="index"
       >
         <router-link :to="{name: item.href}">
           <img
@@ -18,6 +18,7 @@
       <div
         class="swiper-pagination"
         v-if="options.pagination"
+        slot="pagination"
       />
     </swiper>
   </section>
@@ -64,5 +65,5 @@ export default {
 </script>
 
 <style lang="css">
-@import "~swiper/dist/css/swiper.css"
+@import "~swiper/dist/css/swiper.css";
 </style>

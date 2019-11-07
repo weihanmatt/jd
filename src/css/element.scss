@@ -14,6 +14,7 @@
 
 @mixin list($direction:column) {
   @include flex($direction);
+  list-style: none;
 }
 
 @mixin panel($bgcolor: #fff, $padding:0, $margin:20px 0, $height:112px, $txtPadding: 0 32px, $color:#333, $fontSize:32px) {
@@ -30,5 +31,6 @@
     text-align: center;
     color: $color;
     font-size: $fontSize;
+    font-weight: bold;
   }
 }
